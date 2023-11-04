@@ -10,19 +10,19 @@ int main() {
 
     std::uniform_int_distribution<int> uni(min,max); // Guaranteed unbiased
 
-    auto random_integer = uni(rng);
+    auto randInt = uni(rng);
 
     int guess, tries = 0;
 
     //std::cout << min << " " << max << std::endl;
-    //std::cout << random_integer << std::endl;
+    //std::cout << randInt << std::endl;
 
-    while(guess != random_integer) {
+    while(guess != randInt) {
         std::cout << "guess number: ";
         std::cin >> guess;
-        if (guess > random_integer) {
+        if (guess > randInt) {
             std::cout << "too high\n";
-        } else if (guess < random_integer) {
+        } else if (guess < randInt) {
             std::cout << "too low\n";
         }
         tries++;

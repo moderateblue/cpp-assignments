@@ -18,10 +18,10 @@ int main() {
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
     int arr2[] = {1, 2, 3, 4, 5, 7, 8};
 
-    double arrmed = median(&arr[0], 8);
-    double arr2med = median(&arr2[0], 7);
+    double arrMed = median(&arr[0], 8);
+    double arr2Med = median(&arr2[0], 7);
     
-    cout << arrmed << endl << arr2med << endl;
+    cout << arrMed << endl << arr2Med << endl;
 
     return 0;
 }

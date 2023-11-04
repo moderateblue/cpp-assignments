@@ -4,15 +4,15 @@ using namespace std;
 
 int* shift(int arr[], int size) {
     //array = pointer to array first element
-    int* newarr = new int[size + 1];
+    int* newArr = new int[size + 1];
 
-    newarr[0] = 0;
+    newArr[0] = 0;
 
     for (int i = 0; i < size + 1; i++) {
-        newarr[i + 1] = arr[i];
+        newArr[i + 1] = arr[i];
     }
 
-    arr = newarr;
+    arr = newArr;
     //cout << arr[0] << " " << arr[1] << " " << arr[2] << endl;
 
     return arr;
@@ -20,7 +20,7 @@ int* shift(int arr[], int size) {
 
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
-    int* newarr = shift(arr, 5);
+    int* newArr = shift(arr, 5);
 
     for (int i : arr) {
         cout << i << " ";
@@ -28,11 +28,11 @@ int main() {
     cout << endl;
 
     for (int i = 0; i < 6; i++ ) {
-        cout << newarr[i] << " ";
+        cout << newArr[i] << " ";
     }
     cout << endl;
 
-    delete[] newarr;
+    delete[] newArr;
 
     return 0;
 }
